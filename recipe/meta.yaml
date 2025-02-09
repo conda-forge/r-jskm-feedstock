@@ -1,4 +1,4 @@
-{% set version = "0.5.8" %}
+{% set version = "0.5.10" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jskm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jskm/jskm_{{ version }}.tar.gz
-  sha256: f33ea677bec3519db59590fdc41ac69118a0c704873e920101ba3cbc6c2c1016
+  sha256: 55cd9c6be7ebf738d8f358c127519a13231f7a85b25d099d2e0837898a9ffbb2
 
 build:
   number: 0
@@ -28,6 +28,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-cmprsk
     - r-ggplot2
     - r-ggpubr
     - r-patchwork
@@ -36,6 +37,7 @@ requirements:
     - r-survival
   run:
     - r-base
+    - r-cmprsk
     - r-ggplot2
     - r-ggpubr
     - r-patchwork
