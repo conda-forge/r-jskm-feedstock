@@ -28,6 +28,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-cmprsk
     - r-ggplot2
     - r-ggpubr
     - r-patchwork
@@ -36,6 +37,7 @@ requirements:
     - r-survival
   run:
     - r-base
+    - r-cmprsk
     - r-ggplot2
     - r-ggpubr
     - r-patchwork
