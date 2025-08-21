@@ -31,6 +31,7 @@ requirements:
     - r-cmprsk
     - r-ggplot2
     - r-ggpubr
+    - r-ggsci
     - r-patchwork
     - r-scales
     - r-survey
@@ -40,6 +41,7 @@ requirements:
     - r-cmprsk
     - r-ggplot2
     - r-ggpubr
+    - r-ggsci
     - r-patchwork
     - r-scales
     - r-survey
