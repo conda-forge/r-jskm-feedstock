@@ -1,4 +1,4 @@
-{% set version = "0.5.20" %}
+{% set version = "0.5.21" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jskm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jskm/jskm_{{ version }}.tar.gz
-  sha256: a2d656552e30cdf6133982df2c2d833777b63d9ff351728c413f631e41ccd334
+  sha256: 15a15c7198c9c49996ac347249648dbebac7cd9fd795cdb1e3ffbdfddc92c8e5
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
   host:
     - r-base
     - r-cmprsk
-    - r-ggplot2
+    - r-ggplot2 >=3.5.0
     - r-ggpubr
     - r-ggsci
     - r-patchwork
@@ -39,7 +39,7 @@ requirements:
   run:
     - r-base
     - r-cmprsk
-    - r-ggplot2
+    - r-ggplot2 >=3.5.0
     - r-ggpubr
     - r-ggsci
     - r-patchwork
@@ -58,7 +58,8 @@ about:
   license: Apache-2.0
   summary: The function 'jskm()' creates publication quality Kaplan-Meier plot with at risk tables below. 'svyjskm()' provides plot for weighted Kaplan-Meier estimator.
   license_family: Apache
-  license_file: LICENSE.txt
+  license_file:
+    - LICENSE.txt
 
 extra:
   recipe-maintainers:
