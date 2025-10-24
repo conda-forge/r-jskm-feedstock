@@ -29,7 +29,7 @@ requirements:
   host:
     - r-base
     - r-cmprsk
-    - r-ggplot2
+    - r-ggplot2 >=3.5.0
     - r-ggpubr
     - r-ggsci
     - r-patchwork
@@ -39,7 +39,7 @@ requirements:
   run:
     - r-base
     - r-cmprsk
-    - r-ggplot2
+    - r-ggplot2 >=3.5.0
     - r-ggpubr
     - r-ggsci
     - r-patchwork
@@ -58,7 +58,8 @@ about:
   license: Apache-2.0
   summary: The function 'jskm()' creates publication quality Kaplan-Meier plot with at risk tables below. 'svyjskm()' provides plot for weighted Kaplan-Meier estimator.
   license_family: Apache
-  license_file: LICENSE.txt
+  license_file:
+    - LICENSE.txt
 
 extra:
   recipe-maintainers:
