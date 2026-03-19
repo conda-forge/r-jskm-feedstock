@@ -33,7 +33,6 @@ requirements:
     - r-ggpubr
     - r-ggsci
     - r-patchwork
-    - r-scales
     - r-survey
     - r-survival
   run:
@@ -43,7 +42,6 @@ requirements:
     - r-ggpubr
     - r-ggsci
     - r-patchwork
-    - r-scales
     - r-survey
     - r-survival
 
