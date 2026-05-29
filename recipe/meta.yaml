@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jskm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jskm/jskm_{{ version }}.tar.gz
-  sha256: 84a7172dacec91ad268ed87bf2bbd230555aab6b5491d9be479185c44864e8bf
+  sha256: 152d85cf2b51040639946f362c9cf88c58bce4e417ae8e907732296f104a5e47
 
 build:
   number: 0
